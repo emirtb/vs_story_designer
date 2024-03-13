@@ -17,11 +17,20 @@ class TopTools extends StatefulWidget {
   final GlobalKey contentKey;
   final BuildContext context;
   final Function? renderWidget;
+    final String? discartTextTitle;
+   final String? discartTextMessage;
+ final String? discartTextOkButton;
+ final String? discartTextCancelButton;
   const TopTools(
       {super.key,
       required this.contentKey,
       required this.context,
-      this.renderWidget});
+      this.renderWidget,
+       this.discartTextTitle,
+      this.discartTextMessage,
+      this.discartTextOkButton,
+      this.discartTextCancelButton,
+      });
 
   @override
   _TopToolsState createState() => _TopToolsState();
@@ -49,7 +58,12 @@ class _TopToolsState extends State<TopTools> {
                       exitDialog(
                               context: widget.context,
                               contentKey: widget.contentKey,
-                              themeType: controlNotifier.themeType)
+                              themeType: controlNotifier.themeType,
+                              discardTitle: widget.discartTextTitle,
+                              discardMessage: widget.discartTextMessage,
+                              discardOkButtonText: widget.discartTextOkButton,
+                              discardCancelButtonText: widget.discartTextCancelButton,
+                              )
                           .then((res) {
                         if (res) Navigator.pop(context);
                       });
