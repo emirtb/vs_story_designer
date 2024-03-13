@@ -393,6 +393,10 @@ class _MainViewState extends State<MainView> {
                               child: TopTools(
                                 contentKey: contentKey,
                                 context: context,
+                                discartTextTitle: widget.discartTextTitle,
+                                discartTextMessage: widget.discartTextMessage,
+                                discartTextOkButton: widget.discartTextOkButton,
+                                discartTextCancelButton: widget.discartTextCancelButton,
                                 // renderWidget: () => startRecording(
                                 //     controlNotifier: controlNotifier,
                                 //     renderingNotifier: renderingNotifier,
