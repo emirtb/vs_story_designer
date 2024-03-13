@@ -64,6 +64,7 @@ class MainView extends StatefulWidget {
 
   /// on back pressed
   final Future<bool>? onBackPress;
+  
 
   /// editor background color
   Color? editorBackgroundColor;

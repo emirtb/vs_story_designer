@@ -142,6 +142,7 @@ class VSStoryDesigner extends StatefulWidget {
   /// on back pressed
   final Future<bool>? onBackPress;
 
+
   /// editor custom color palette list
   final List<Color>? colorList;
 
@@ -151,7 +152,10 @@ class VSStoryDesigner extends StatefulWidget {
   /// gallery thumbnail quality
   final int? galleryThumbnailQuality;
   final String centerText;
-
+  final String? discartTextTitle;
+   final String? discartTextMessage;
+ final String? discartTextOkButton;
+ final String? discartTextCancelButton;
   // share image file path
   final String? mediaPath;
 
@@ -167,6 +171,10 @@ class VSStoryDesigner extends StatefulWidget {
       this.fontFamilyList,
       this.isCustomFontList,
       this.onBackPress,
+      this.discartTextTitle,
+      this.discartTextMessage,
+      this.discartTextOkButton,
+      this.discartTextCancelButton,
       this.onDoneButtonStyle,
       this.editorBackgroundColor,
       this.galleryThumbnailQuality,
