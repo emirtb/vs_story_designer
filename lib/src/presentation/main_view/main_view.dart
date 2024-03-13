@@ -75,7 +75,10 @@ class MainView extends StatefulWidget {
   List<Color>? colorList;
   // Text appearing on center of design screen
   final String? centerText;
-
+  final String? discartTextTitle;
+   final String? discartTextMessage;
+ final String? discartTextOkButton;
+ final String? discartTextCancelButton;
 // theme type
   final ThemeType? themeType;
 
@@ -98,6 +101,10 @@ class MainView extends StatefulWidget {
       this.editorBackgroundColor,
       this.galleryThumbnailQuality,
       this.centerText,
+      this.discartTextTitle,
+      this.discartTextMessage,
+      this.discartTextOkButton,
+      this.discartTextCancelButton,
       this.mediaPath});
 
   @override
