@@ -596,7 +596,11 @@ class _MainViewState extends State<MainView> {
           exitDialog(
               context: context,
               contentKey: contentKey,
-              themeType: widget.themeType!);
+              themeType: widget.themeType!,
+              discardTitle: widget.discartTextTitle,
+              discardMessage: widget.discartTextMessage,
+              discardOkButtonText: widget.discartTextOkButton,
+              discardCancelButtonText: widget.discartTextCancelButton);
     }
     return false;
   }
