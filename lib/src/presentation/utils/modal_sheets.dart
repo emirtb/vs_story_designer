@@ -65,7 +65,7 @@ Future<bool> exitDialog(
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               alignment: Alignment.center,
-              height: 250,
+              height: 300,
               decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
                   color: themeType == ThemeType.light
@@ -81,7 +81,7 @@ Future<bool> exitDialog(
                         blurRadius: 4),
                   ]),
               child: Column(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Text(
                     discardTitle ?? 'Discard Edits?',
