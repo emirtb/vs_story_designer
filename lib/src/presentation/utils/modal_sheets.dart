@@ -120,7 +120,10 @@ Future<bool> exitDialog(
                   AnimatedOnTapButton(
                     onTap: () async {
                       try{
-                      _resetDefaults(context: context);
+                        if (context.mounted) {
+                          _resetDefaults(context: context);
+                        }
+                      
                       }catch(e){
                         print(e);
                       }
