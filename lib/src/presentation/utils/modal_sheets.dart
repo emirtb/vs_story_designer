@@ -127,7 +127,7 @@ Future<bool> exitDialog(
                       }catch(e){
                         print(e);
                       }
-                      Navigator.of(context).pop(true);
+                      Navigator.pop(context, (route) => false);
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
