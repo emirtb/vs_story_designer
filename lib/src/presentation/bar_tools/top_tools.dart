@@ -55,18 +55,19 @@ class _TopToolsState extends State<TopTools> {
                 ToolButton(
                     backGroundColor: Colors.black12,
                     onTap: () async {
-                      exitDialog(
-                              context: widget.context,
-                              contentKey: widget.contentKey,
-                              themeType: controlNotifier.themeType,
-                              discardTitle: widget.discartTextTitle,
-                              discardMessage: widget.discartTextMessage,
-                              discardOkButtonText: widget.discartTextOkButton,
-                              discardCancelButtonText: widget.discartTextCancelButton,
-                              )
-                          .then((res) {
-                        if (res) Navigator.pop(context);
-                      });
+                      // exitDialog(
+                      //         context: widget.context,
+                      //         contentKey: widget.contentKey,
+                      //         themeType: controlNotifier.themeType,
+                      //         discardTitle: widget.discartTextTitle,
+                      //         discardMessage: widget.discartTextMessage,
+                      //         discardOkButtonText: widget.discartTextOkButton,
+                      //         discardCancelButtonText: widget.discartTextCancelButton,
+                      //         )
+                      //     .then((res) {
+                      //  if (res) Navigator.pop(context);
+                      // });
+                      Navigator.pop(context);
                     },
                     child: const Icon(
                       Icons.close,
